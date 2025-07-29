@@ -58,7 +58,7 @@ body {
 
 @media (min-width: 1200px) {
     .header .login {
-        width: 20%;
+        width: 25%;
         padding-left: 0;
         padding-right: 0;
     }
@@ -222,7 +222,7 @@ textarea {
 
 @media (min-width: 1200px) {
     .header .navbar .nav {
-        margin: 0;
+        margin: 10%;
     }
 }
 
@@ -1231,4 +1231,16 @@ p {
 
 .card-img:hover {
     opacity: 1;
+}
+@media (min-width: 1200px) {
+    .header .login {
+        width: 25%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .header .navbar .nav {
+        margin-left: 10%;
+    }
 }
