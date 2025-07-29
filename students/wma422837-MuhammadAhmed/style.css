@@ -1244,3 +1244,46 @@ p {
         margin-left: 10%;
     }
 }
+
+.banking-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .section-title {
+            color: #71277a;
+            margin-bottom: 50px;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .banking-method {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .banking-method:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .method-title {
+            color: #71277a;
+            margin: 20px 0 15px;
+            font-weight: 600;
+        }
+        
+        .method-icon {
+            font-size: 40px;
+            color: #71277a;
+        }
+        
+        .method-description {
+            color: #555;
+            line-height: 1.6;
+        }
