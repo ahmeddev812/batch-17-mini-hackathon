@@ -1232,6 +1232,7 @@ p {
 .card-img:hover {
     opacity: 1;
 }
+
 @media (min-width: 1200px) {
     .header .login {
         width: 25%;
@@ -1239,6 +1240,7 @@ p {
         padding-right: 0;
     }
 }
+
 @media (min-width: 1200px) {
     .header .navbar .nav {
         margin-left: 10%;
@@ -1246,44 +1248,195 @@ p {
 }
 
 .banking-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .section-title {
-            color: #71277a;
-            margin-bottom: 50px;
-            font-weight: 700;
-            text-align: center;
-        }
-        
-        .banking-method {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            height: 100%;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .banking-method:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        
-        .method-title {
-            color: #71277a;
-            margin: 20px 0 15px;
-            font-weight: 600;
-        }
-        
-        .method-icon {
-            font-size: 40px;
-            color: #71277a;
-        }
-        
-        .method-description {
-            color: #555;
-            line-height: 1.6;
-        }
+    padding: 80px 0;
+    background-color: #701e7d;
+}
+
+.section-title {
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.banking-method {
+    background: #701e7d;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banking-method:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.method-title {
+    color: #71277a;
+    margin: 20px 0 15px;
+    font-weight: 600;
+}
+
+.method-icon {
+    font-size: 40px;
+    color: #71277a;
+}
+
+.method-description {
+    color: white;
+    line-height: 1.6;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #701e7d;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.card1 {
+    flex: 1 1 calc(33.333% - 40px);
+
+    max-width: 10%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover  {
+    transform: translateY(-10px);
+
+    
+}
+
+.card-img-top {
+    width: 100%;
+    
+
+    margin:0 auto;
+    object-fit: cover;
+    border-radius: 150px;
+}
+
+.card-title1 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card-text1 {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .card1 {
+        flex: 1 1 calc(50% - 40px);
+
+    }
+}
+
+@media (max-width: 600px) {
+    .card1 {
+        flex: 1 1 100%;
+        flex-direction: column;
+    }
+}
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #701e7d;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.card1 {
+    flex: 1 1 calc(33.333% - 40px);
+
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.card-body {
+    width: 100%;
+}
+
+.card-title1 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card-text1 {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+    .card1 {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-group {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+    
+    .card1 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 15px 10px;
+    }
+    
+    .card-img-top {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .card-title1 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    
+    .card-text1 {
+        font-size: 13px;
+    }
+}
